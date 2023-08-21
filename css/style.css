@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 100px auto 0;
+}
+
+.graph{
+    display: grid;
+    grid-template-columns: repeat(1fr, 51);
+    gap: 1px;
+}
+
+.graph-item{
+    background: #EDEDED;
+    width: 15px;
+    height: 15px;
+}
+
+.contribution-level-1{
+    background: #ACD5F2;
+}
+
+.contribution-level-2{
+    background: #7FA8C9;
+}
+.contribution-level-3{
+    background: #527BA0;
+}
+.contribution-level-4{
+    background: #254E77;
+}
