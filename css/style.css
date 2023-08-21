@@ -95,3 +95,17 @@ body{
     line-height: 12px;
     color: #7C7C7C;
 }
+
+
+.months{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 5px;
+}
+
+.month{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #959494;
+}

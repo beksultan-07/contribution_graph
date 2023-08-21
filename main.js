@@ -133,8 +133,21 @@ function renderItemInfo(x, y, date, value){
 }
 
 
+function setMonth() {
+    const months = document.querySelectorAll('.month')
+    const dateForMonth = new Date()
+    months.forEach((element, index) => {
+        element.innerHTML = getMonth(dateForMonth.getMonth())
+        dateForMonth.setMonth(
+            dateForMonth.getMonth() - 1
+        )
+    });
+}
+
 
 async function render(){
+    setMonth()
+
     const data = await getData()
     const dataValues = Object.values(data)
     const dataKeys = Object.keys(data)
